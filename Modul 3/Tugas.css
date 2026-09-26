@@ -1,0 +1,55 @@
+body { background: rgb(39, 39, 39); }
+h2 {
+    font-family: "Comic Sans MS";
+    background-color: rgb(212, 176, 15);
+    text-align: center;
+}
+table {
+    background: rgb(150, 148, 148);
+    margin: 0 auto;
+    padding: 15px;
+    width: 68%;
+    border: 2px solid black; 
+    border-radius: 4px;
+}
+.kolom1 {
+    font-weight: bold;
+    width: 15%;
+}
+.kolom2 { width: 2%; }
+.kolom3 { width: 83%; }
+#txtNama, #txtKota { width: 186px; }
+#txtTgl, #txtBulan { width: 54px; }
+#txtTahun { width: 87px; }
+#txtAlamat {
+    width: 346px;
+    height: 42px;
+}
+
+#btnKirim {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btnKirim:hover {
+    background-color: #45a049;
+}
+
+#btnCancel {
+    background-color: #f44336; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btnCancel:hover {
+    background-color: #da190b;
+}
