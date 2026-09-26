@@ -1,13 +1,9 @@
-body {
-    background: blue;
-}
-
+body {background: blue;}
 h2 {
     font-family: "Comic Sans MS";
     background-color: red;
-    text-align: center;
+    text-align:center;
 }
-
 table {
     background: grey;
     margin: 0 auto;
@@ -15,32 +11,15 @@ table {
     width: 68%;
     border-width: 0px;
 }
-
 .kolom1 {
-    font-weight: bold;
+    font-weight:bold;
     width: 15%;
 }
-
-.kolom2 {
-    width: 2%;
-}
-
-.kolom3 {
-    width: 83%;
-}
-
-#txtNama, #txtKota {
-    width: 186px;
-}
-
-#txtTgl, #txtBulan {
-    width: 54px;
-}
-
-#txtTahun {
-    width: 87px;
-}
-
+.kolom2 {width: 2%;}
+.kolom3 {width: 83%;}
+#txtNama, #txtKota {width: 186px;}
+#txtTgl, #txtBulan {width: 54px;}
+#txtTahun {width: 87px;}
 #txtAlamat {
     width: 346px;
     height: 42px;
