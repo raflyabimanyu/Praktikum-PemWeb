@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan Form Validasi</title>
+</head>
+<body>
+    <form name="formLatihan" method="POST" onSubmit="return validasi()">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;">Komentar</td>
+                <td style="vertical-align: top;">:</td>
+                <td><textarea id="komentar" name="komentar" rows="6" cols="35"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><input type="submit" value="Simpan"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function validasi() {
+            const nama = document.getElementById("nama");
+            const email = document.getElementById("email");
+            const komentar = document.getElementById("komentar");
+
+            if (nama.value.trim() === "") {
+                alert("Field Nama tidak boleh kosong!");
+                nama.focus();
+                return false;
+            }
+
+            if (email.value.trim() === "") {
+                alert("Field Email tidak boleh kosong!");
+                email.focus();
+                return false;
+            }
+
+            if (komentar.value.trim() === "") {
+                alert("Field Komentar tidak boleh kosong!");
+                komentar.focus();
+                return false;
+            }
+
+            const regexNama = /^[a-zA-Z\s]+$/;
+            if (!regexNama.test(nama.value)) {
+                alert("Field Nama tidak diperbolehkan memiliki angka atau simbol!");
+                nama.focus();
+                return false;
+            }
+
+            alert("Data berhasil disimpan!");
+            return true;
+        }
+    </script>
+</body>
+</html>
